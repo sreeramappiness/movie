@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">VSMovie</string>
+    <string name="user_id">User name</string>
+    <string name="password">Password</string>
+    <string name="login">LOGIN</string>
+    <string name="popular">POPULAR</string>
+    <string name="search">Search</string>
+    <string name="invalid">Invalid Credentials</string>
+    <string name="something_went_wrong">Oops! something went wrong</string>
+    <string name="image_url">https://image.tmdb.org/t/p/w342</string>
+</resources>

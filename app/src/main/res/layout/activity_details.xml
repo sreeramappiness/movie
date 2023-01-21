@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".views.DetailsActivity">
+
+    <RelativeLayout
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="50dp"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tvMovieName"
+            android:text="The Last of US"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:fontFamily="@font/interbold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tvTagLine"
+            android:layout_below="@+id/tvMovieName"
+            android:text="When you are lost"
+            android:textColor="#ADFFFFFF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <RatingBar
+            android:id="@+id/ratingBarDetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:numStars="5"
+            android:progressBackgroundTint="#a8a8a8"
+            android:progressTint="#FFFFFF"
+            android:scaleX="0.5"
+            android:scaleY="0.5"
+            android:stepSize="0.5"
+            android:visibility="visible" />
+        
+        <ImageView
+            android:id="@+id/ivMovieImage"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_below="@+id/tvTagLine"
+            android:src="@drawable/login_movies_image"/>
+
+        <TextView
+            android:id="@+id/tvOverview"
+            android:textColor="#ADFFFFFF"
+            android:layout_below="@+id/ivMovieImage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tvLastAirDate"
+            android:textColor="#ADFFFFFF"
+            android:layout_below="@+id/tvOverview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+    <ProgressBar
+        android:id="@+id/loader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+</RelativeLayout>
